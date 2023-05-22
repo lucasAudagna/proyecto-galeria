@@ -1,3 +1,39 @@
+body {
+  background-color: rgb(250, 244, 211);
+}
 
+.nav1 {
+  padding: 0;
+  background-color: rgb(135, 85, 67);
+}
+.nav1 img {
+  height: 10vh;
+  width: 10vh;
+}
+.nav1 .f {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 320px) {
+  .nav1 .f {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.offcanvas-body {
+  background-color: rgb(250, 244, 211);
+}
+.offcanvas-body a:hover {
+  transition: ease-in 0.2s;
+  font-weight: bold;
+}
+.offcanvas-body .dropdown-menu {
+  background-color: rgb(250, 244, 211);
+}
+.offcanvas-body .dropdown-menu a:active {
+  transition: ease-in 0.1s;
+  background-color: rgb(52, 73, 102);
+}
 
 /*# sourceMappingURL=styles.css.map */

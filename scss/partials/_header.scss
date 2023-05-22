@@ -1,0 +1,30 @@
+// HEADER
+.nav1{
+    padding: 0;
+    background-color: rgb(135, 85, 67);
+    img{
+        height: 10vh;
+        width: 10vh;
+    }
+    .f{
+        display: flex;
+        flex-direction: column;
+    }
+    @media (min-width: 320px){
+        .f{
+            flex-direction: row;
+            align-items: center;
+        }
+    }
+}
+.offcanvas-body{
+    @include color-fondo();
+    @include transi-link;
+    .dropdown-menu{
+        @include color-fondo();
+        a:active{
+            transition: ease-in .1s;
+            background-color: rgb(52, 73, 102);
+        }
+    }
+}

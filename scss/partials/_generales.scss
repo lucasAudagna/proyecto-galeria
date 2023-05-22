@@ -1,0 +1,15 @@
+// *{
+//     background-color: rgb(200, 241, 150);
+// }
+@mixin color-fondo{
+    background-color: rgb(250, 244, 211);
+}
+@mixin transi-link{
+    a:hover{
+        transition: ease-in .2s;
+        font-weight: bold; 
+    }
+}
+body{
+    @include color-fondo();
+}
